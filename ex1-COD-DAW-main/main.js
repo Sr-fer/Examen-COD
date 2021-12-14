@@ -1,3 +1,1 @@
-function __main__() { a(); b(); }
-
-__main__();
+function __main__() { contador_diferencia_temperaturas(); contador_celsius(); }
