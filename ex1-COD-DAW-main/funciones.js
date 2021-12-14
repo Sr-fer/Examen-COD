@@ -1,24 +1,24 @@
-function c(d) {
-var c = 5/9*(d - 32);
-return c;
+function paso_de_temperaturas(grados) {
+var operacon_paso_temperaturas = 5/9*(grados - 32);
+return operacon_paso_temperaturas;
 }
 
-var df = [60, 32, 100];var dc = []; var contador;
+var grados_farenhaid = [60, 32, 100];var grados_celsius = []; var contador;
 
-function b() {
+function contador_temperaturas() {
 for(contador = 2; contador >= 0; contador--) {
-document.write("Valor " + contador +" es " + df[contador] +" F ");
+document.write("Valor " + contador +" es " + grados_farenhaid[contador] +" F ");
 
-document.write(" el cual es " + dc[contador] + " C");
+document.write(" el cual es " + grados_celsius[contador] + " C");
 
-fc(dc[contador])
+contador_celsius(grados_celsius[contador])
 }
 }
 
-function a() {for (contador = 0; contador <= 2; contador++) {dc[contador] = c(df[contador]);}
+function contador_diferencia_temperaturas() {for (contador = 0; contador <= 2; contador++) {grados_celsius[contador] = paso_de_temperaturas(grados_farenhaid[contador]);}
 }
 
-function fc(aux) {
+function contador_celsius(aux) {
 if (aux > 25) {document.write(" Hace calor <br />"); } 
 else
 if (aux < 15) {
